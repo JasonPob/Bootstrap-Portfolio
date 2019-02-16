@@ -2,63 +2,151 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Jason Poblador</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Bootstrap | Jason Poblador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
-  <header id="masthead">
+    <!--Navbar-->
     <div class="container">
-      <a href="index.html" id="logo">Jason Poblador</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#4aaaa5">
+            <a class="navbar-brand" href="index.html">Jason Poblador</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
-  </div>
-
-  <footer>
+    <!--Body w Pictures-->
     <div class="container">
-      Copyright &copy;
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron my-bg-color-2">
+                    <div class="h2">Portfolio</div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card text-center" style="width: 18rem; ">
+                                <img class="card-img-top"
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/RPG.jpg" alt="RPG">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">RPG</h5>
+                                    <hr>
+                                    <p class="card-text">Browser based Role Playing Game</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center" style="width: 18rem; ">
+                                <img class="card-img-top"
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/ecommerce.jpg"
+                                    alt="ecommerce">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">Ecommerce</h5>
+                                    <hr>
+                                    <p class="card-text">Created ecommerce site similar to amazon</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/realestate.jpg"
+                                    alt="Real Estate">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">Real Estate</h5>
+                                    <hr>
+                                    <p class="card-text">Fully functioning real estate agent website</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card text-center" style="width: 18rem;" >
+                                <img class="card-img-top"
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/restaurant.jpg"
+                                    alt="Restaurant">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">Restaurant</h5>
+                                    <hr>
+                                    <p class="card-text">Home page for restaurant including a full menu</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center"style="width: 18rem; " >
+                                <img class="card-im-top" 
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/movies.jpg"
+                                    alt="Movies">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">Movies</h5>
+                                    <hr>
+                                    <p class="card-text">Movie Database similiar to netflix</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="C:\Users\Jason\Documents\bootcamp_git\Bootstrap-Portfolio/controller.jpg"
+                                    alt="Controller">
+                                <div class="card-body text-white" style="background-color:#4aaaa5">
+                                    <h5 class="card-title">Web based Game</h5>
+                                    <hr>
+                                    <p class="card-text">Another browser based Game</p>
+                                    <a href="#" class="btn btn-primary">Github</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+    </div>
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>
